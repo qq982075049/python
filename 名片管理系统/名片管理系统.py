@@ -30,13 +30,20 @@ while True:
 			pass
 		elif num==4:
 			serch_name = input("请输入需要查询的名字:")
+		#	for temp in list:
+		#		if temp["name"]==serch_name:
+		#			print("查到:%s"%temp["name"])
+		#			flag = 1
+		#			break
+		#	if flag==0:
+		#		print("查无此人")
+		#此方法定义了一个变量来存储这个数值
 			for temp in list:
 				if temp["name"]==serch_name:
 					print("查到:%s"%temp["name"])
-					flag = 1
 					break
-			if flag==0:
-				print("差无此人")
+			else:
+				print("查无此人")
 		elif num==5:
 			print("姓名\t 年龄\t 地址")
 			for temp in list:
