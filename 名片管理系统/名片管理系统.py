@@ -10,7 +10,7 @@ print("="*50)
 print()
 
 list = []
-
+# ifo = {} 全局变量，注意和下面17行的局部变量去比较，list结果是完全不同的
 while True:
 		num = int(input("请输入操作对应的数字:"))
 		 
